@@ -1,0 +1,9 @@
+dict = {}
+n = int(input("How many items will you enter? "))
+for _ in range(n):
+    key = input("Enter key: ")
+    value = float(input("Enter  numeric value for this key: "))
+    dict[key] = value
+total = sum(dict.values())
+print("\nDictionary you entered:", dict)
+print("Sum of all values:", total)
