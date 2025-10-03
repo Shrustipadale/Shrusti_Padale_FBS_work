@@ -1,0 +1,80 @@
+Name:Shrusti Dilip Padale
+Set-A
+FRN-11P0625/009
+
+Question no 1:
+-select name,salary from employee 
+->order by salary desc;
+
+Question no 2:
+-select salary from employee
+->order by salary desc;
+
+Question no 3:
+-select count(*) from employee
+->limit (3,5);
+
+Question no 4:
+-select count(*),did from employee
+->group by did;
+
+Question no 5:
+-select avg(salary),did from employee
+->where avg(salary)>=50000
+->order by did;
+
+Question no 6:
+-select products , pname, from products
+->where name="Laptop";
+
+Question no 7:
+-select student_name from students
+->remove ("%%%");
+
+Question no 8:
+-select name from students 
+-> name is like("A%");
+
+Question no 9:
+-select count(*),month_no from Orders
+->where  months>100
+->group by month_name;
+Question no 10:
+-select sum(salary),avg(salary),category from Sales
+->where sum(salary)>100000
+->order by category;
+
+Question no 11: What does the following query return? 
+         SELECT COUNT(*) FROM Employees; 
+Answer:a)The total number of employees
+
+Question no 12: What will be the output of the following query? 
+               SELECT LENGTH('Database'); 
+Answer:b)8
+
+Question no 13: Which of the following clauses is used to filter grouped results?
+Answer:d)Group by
+
+Question no 14: What does `LEFT JOIN` do? 
+Answer:b) Returns all rows from the left table and matching rows from the right table
+
+Question no 15:What will be the result of the following query? 
+               SELECT UPPER('hello world');
+Answer:b)b) HELLO WORLD
+
+Question no 16:
+-select total_amount ,region 
+->from Orders o inner join Customers c
+->on o.customer_id =c.customer_id
+->where total_amount>=10000
+->group by region;
+
+Question no 17:
+-select count(*),author_id from 
+->Books b inner join Sales s 
+->on b.book_id=s.book_id
+->where author_id>100
+->group by author_id;
+
+
+
