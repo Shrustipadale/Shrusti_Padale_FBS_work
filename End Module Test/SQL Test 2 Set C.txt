@@ -1,0 +1,61 @@
+Name:Shrusti Padale
+Roll no:009
+Test:SQL Test 2 Set C
+
+Question no:1
+
+-select * from actors;
+
+Question no:2
+
+-select IMDB_rating from actors
+->order by IMDB_rating desc;
+
+Question no:3
+
+-select name from actors
+->where gender='Male' and no_of_awards>10;
+
+Question no:4
+
+-select role, m_id
+->from actor_movie
+->where a_id = 101;
+
+Question no:5
+
+-select name from actors
+->where nationality is not Indian;
+
+Question no:6
+
+-select count(*),mname from actors
+->group by mname;
+
+Question no:7
+
+-select am.role
+->from actor_movie am
+->from actors a on am.a_id = a.a_id
+->join movie m on am.m_id = m.m_id
+->where a.name = 'Amir Khan' and m.mname = '3 Idiots';
+
+
+Question no :8
+ 
+-select * from movie
+->where t_budget = (select min(t_budget) from movie);
+
+
+Question no:9
+
+-select count(*),gender from actors
+->group by gender;
+
+Question no:10
+ 
+-select am.role, am.m_id
+->from actor_movie am
+->join movie m on am.m_id = m.m_id
+->where am.m_id = 3;
+
